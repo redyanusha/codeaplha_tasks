@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Dashboard</title>
+  <link rel="stylesheet" href="./dash.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <header class="header">
+      <div class="menu-icon" onclick="openSidebar()">
+        <i class="fa-solid fa-bars material-icons-outlined"></i>
+      </div>
+      <div class="header-left">
+        <i class="fa-solid fa-magnifying-glass material-icons-outlined"></i>
+      </div>
+      <div class="phone">
+        <i class="fa-regular fa-bell material-icons-outlined"></i>
+        <i class="fa-regular fa-envelope material-icons-outlined"></i>
+        <a href="./so.html"><i class="fa-regular fa-circle-user material-icons-outlined"></i></a>
+
+      </div>
+    </header>
+    <aside id="sidebar">
+      <div class="sidebar-title">
+        <div class="sidebar-brand">
+          <i class="fa fa-icons"></i> FORUM
+        </div>
+        <i class="fa-regular fa-circle-xmark " onclick="closeSidebar()"></i>
+      </div>
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+          <a href="#">
+            <i class="fa fa-table-cells material-icons-outlined"></i>
+            <h8 style="font-size:20px;padding:9px 6px;color: white;">Dashboard</h8>
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#">
+            <i class="fa-solid fa-download material-icons-outlined"></i>
+            <h8 style="font-size:20px;padding:9px 6px">Download</h8>
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#">
+            <i class="fa-solid fa-align-center material-icons-outlined"></i>
+            <h8 style="font-size:20px;padding:9px">Leaderboard</h8>
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#">
+            <i class="fa fa-phone material-icons-outlined"></i>
+            <h8 style="font-size:20px;padding:9px 6px">Support</h8>
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#">
+            <i class="fa-regular fa-envelope material-icons-outlined"></i>
+            <h8 style="font-size:20px;padding:9px 6px"> Message</h8>
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#">
+            <i class="fa fa-square-poll-vertical material-icons-outlined"></i>
+            <h8 style="font-size:20px; padding:9px 9px">Reports</h8>
+          </a>
+        </li>
+        <li class="sidebar-list-item">
+          <a href="#">
+            <i class="fa fa-gear material-icons-outlined"></i>
+            <h8 style="font-size:20px; padding:9px 5px;font-weight: 400px;">Settings</h8>
+          </a>
+        </li>
+
+      </ul>
+    </aside>
+
+    <main class="main-container">
+      <div class="main-title">
+        <h2>DASHBOARD</h2>
+      </div>
+      <div class="main-cards">
+        <div class="card">
+          <div class="card-inner">
+            <h2>LIKES</h2>
+            <i class="fa-regular fa-thumbs-up material-icons-outlined"></i>
+          </div>
+          <h1>4,021</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h2>SUBSCRIBERS</h2>
+            <i class="fa-regular fa-bell "></i>
+          </div>
+          <h1>8,737</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h2>FOLLOWERS</h2>
+            <i class="fa-solid fa-people-group fa-regular"></i>
+          </div>
+          <h1>6,786</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h2>MESSAGES</h2>
+            <i class="fa-regular fa-message material-icons-outlined"></i>
+          </div>
+          <h1>4,021</h1>
+        </div>
+      </div>
+
+      <div class="products">
+        <div class="product-card">
+          <h2 class="product-description">Latest Updates</h2>
+          <p class="text-secondary">Join the number of social media platforms who read Social Media Today’s daily
+            newsletter to stay on the pulse of the latest social media news and what it means for the industry.Post
+            daily activities in social media help people to know going on...</p>
+          <button type="button" class="product-button">
+            <i class="fa-solid fa-plus material-icons-outlined"></i>
+          </button>
+        </div>
+
+        <div class="social-media">
+          <div class="product">
+
+
+            <div class="hall">
+              <div class="product-icon " style="background-color:   rgb(189, 18, 5);">
+                <i class="fa-brands fa-twitter  "></i>
+              </div>
+              <h1 class="text-red" style="color:   rgb(189, 18, 5);">+274</h1>
+              <p class="text-secondary">+274 notifications are waiting for you on your twitter account....
+              </p>
+            </div>
+
+            <div class="hall">
+              <div class="product-icon  background-green " style="background-color:rgb(18, 73, 32)">
+                <i class="fa-brands fa-instagram  "></i>
+              </div>
+              <h1 class="text-green" style="color:rgb(18, 73, 32)">+352</h1>
+              <p class="text-secondary">+352 members are likes your post on instagram today......</p>
+            </div>
+
+            <div class="hall">
+              <div class="product-icon " style="background-color: rgb(20, 10, 87);">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <h1 class="text-orange" style="color: rgb(20, 10, 87);">-124</h1>
+              <p class="text-secondary">So Sad.....You miss -124 followers on this week.....</p>
+            </div>
+
+            <div class="hall">
+              <div class="product-icon " style="background-color:rgb(116, 34, 34);">
+                <i class="fa-brands fa-linkedin "></i>
+              </div>
+              <h1 class="text-blue" style="color:rgb(116, 34, 34);">+274</h1>
+              <p class="text-secondary ">+274 recuiters are looking to hire proffesionals with this skills....</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+<script src="./dash.js"></script>
+
+</html>
