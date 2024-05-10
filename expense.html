@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="expense.css" />
+    <script src="./expense.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <section class="box_upper">
+          <h1>Expense Tracker</h1>
+
+          <div class="balance">
+            
+            <h3>Your Balance</h3>
+            <h2 id="netAmount">₹0</h2>
+          </div>
+        </section>
+
+        <div class="transaction_container">
+          <h3>Transactions</h3>
+          <hr />
+
+          <div class="transactions">
+        
+          </div>
+        </div>
+        <section class="transaction_form">
+          <h3>Add Transactions</h3>
+          <form id="transactionForm">
+            <div class="inputs">
+              <div class="form_control">
+                <label for="text">Text:</label>
+                <input
+                  placeholder="Enter Description"
+                  type="text"
+                  name="text"
+                  id="text"
+                />
+              </div>
+              <div class="form_control">
+                <label for="amount">Amount:</label>
+                <input
+                  placeholder="Enter Amount"
+                  type="number"
+                  name="amount"
+                  id="amount"
+                />
+              </div>
+            </div>
+
+            <div class="buttons_container">
+              <button type="submit" id="earnBtn">
+                <p id="earning">₹0</p>
+                <p>Earnings</p>
+              </button>
+              <button type="submit" id="expBtn">
+                <p id="expense">₹0</p>
+                <p>Expense</p>
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
+
